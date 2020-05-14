@@ -1,0 +1,11 @@
+[]. Login Page
+[]. Register
+[]. Torrent Page
+[]. Bookmark torrent
+
+
+[]. Results Paggination
+[]. Results change search category
+
+
+[]. Maybe refactor

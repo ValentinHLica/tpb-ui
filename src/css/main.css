@@ -1,0 +1,274 @@
+@import url("https://fonts.googleapis.com/css2?family=Baloo+2&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Baloo 2", cursive;
+  color: #292929;
+  text-decoration: none;
+}
+
+*:focus {
+  outline: none;
+}
+
+ul {
+  list-style: none;
+}
+
+body {
+  background-color: #f8f8f8;
+}
+
+/* Spinner */
+.loading {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.loader {
+  -webkit-animation: spin 1.5s infinite; /* Safari */
+  width: 25px;
+  height: 25px;
+  animation: spin 1.5s infinite;
+}
+
+.fa-spinner {
+  animation: spin 1s infinite;
+}
+
+/* Safari */
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Container */
+.container {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+@media (min-width: 768px) {
+  .container {
+    width: 670px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    width: 890px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 1090px;
+  }
+}
+
+.pagenotfound {
+  text-align: center;
+  margin-top: 50px;
+}
+
+/* ScrollBard */
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px #919191;
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #a4724c;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #8d6241;
+}
+
+/* Header */
+/* Header */
+.header {
+  background-color: white;
+  box-shadow: 0px 1px 2px #eee;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 2;
+}
+
+.header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header .header-logo svg {
+  width: 50px;
+  height: 50px;
+}
+
+.header-logo {
+  position: absolute;
+  left: 10px;
+}
+
+.header form {
+  display: flex;
+  align-items: center;
+}
+
+.header form input {
+  padding: 5px 20px;
+  border-radius: 5px;
+  border: 1px solid #eee;
+  box-shadow: 0px 1px 2px #eee;
+  font-size: 1em;
+  transition: box-shadow 0.4s;
+}
+
+.header form button {
+  border: 0;
+  border-radius: 5px;
+  background: #a4724c;
+  padding: 5px 25px;
+  font-size: 1.1em;
+  color: white;
+  box-shadow: 0 2px 3px #8a6040;
+  margin-left: 10px;
+}
+
+.header form button:hover {
+  cursor: pointer;
+}
+
+.header ul {
+  display: flex;
+}
+
+.header ul li {
+  color: #a4724c;
+  padding: 0 5px;
+}
+
+.header form button img {
+  display: none;
+}
+
+.header form button span {
+  color: white;
+}
+
+.header .header-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+@media (max-width: 800px) {
+  .header {
+    flex-direction: column;
+  }
+  .header-logo {
+    position: relative;
+    left: auto;
+    margin: 10px 0;
+  }
+  .header form button img {
+    display: block;
+  }
+
+  .header form button span {
+    display: none;
+  }
+
+  .header .list {
+    display: none;
+  }
+
+  .header .container {
+    width: 90vw;
+  }
+
+  .dropdown-button {
+    display: flex;
+    background-color: #a4724c;
+    box-shadow: 0 2px 3px #8a6040;
+    padding: 5px;
+    border-radius: 5px;
+  }
+
+  .dropdown-menu {
+    padding-top: 20px;
+    position: fixed;
+    top: 10px;
+    left: 0;
+    right: 0;
+    background-color: white;
+    transition: top 0.4s;
+  }
+
+  .dropdown-menu li {
+    padding: 10px;
+  }
+
+  .dropdown-menu-open {
+    top: 130px;
+  }
+
+  .bc {
+    background-color: rgba(0, 0, 0, 0.466);
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+}
+
+@media (max-width: 500px) {
+  .header {
+    padding: 10px 0;
+  }
+  .header .container {
+    width: 100vw;
+  }
+
+  .header form button {
+    padding: 5px;
+  }
+
+  .header form input {
+    width: 50vw;
+  }
+}
+
+.go-back {
+  color: blue;
+}

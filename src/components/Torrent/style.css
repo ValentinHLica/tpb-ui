@@ -1,0 +1,156 @@
+/* Torrent */
+.torrent-page {
+  margin-top: 40px;
+}
+
+.torrent-page-main-detail {
+  background-color: white;
+  border-radius: 10px;
+  padding: 30px;
+  display: grid;
+  grid-template-columns: 80% 20%;
+}
+
+.torrent-page-category {
+  display: flex;
+  margin: 10px 0;
+}
+
+.torrent-page-category div {
+  background: #eee;
+  box-shadow: 0px 1px 2px #eee;
+  padding: 0 5px;
+  border-radius: 6px;
+  margin-right: 5px;
+}
+
+.torrent-page-detail {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+}
+
+.torrent-page-uploder,
+.torrent-page-date,
+.seed-and-leech {
+  display: flex;
+  align-items: center;
+}
+
+.torrent-page-uploder img,
+.torrent-page-date img {
+  margin-right: 5px;
+}
+
+.torrent-page-magnet a {
+  background-color: #4bb49a;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 10px 0;
+  color: white;
+}
+
+.seed {
+  color: #4bb49a;
+  margin: 0 5px;
+}
+
+.leech {
+  color: #c35256;
+  margin: 0 5px;
+}
+
+.torrent-desciption {
+  margin-top: 50px;
+}
+
+.description {
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  font-size: 11px;
+  font-family: "Courier New", Courier, monospace !important;
+  background-color: white;
+  border-radius: 5px;
+  padding: 10px;
+  height: 300px;
+  overflow-y: scroll;
+}
+
+.torrent-comments {
+  margin-top: 50px;
+}
+
+.comment {
+  background-color: white;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px 0;
+}
+.comment-info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.comment-username {
+  color: #a4724c;
+}
+.comment-date {
+  color: #7d7d7d;
+}
+
+.size,
+.info h2,
+.comment .comment-text {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.comment-text {
+  white-space: pre-wrap !important;
+}
+
+@media (max-width: 992px) {
+  .torrent-page-main-detail,
+  .torrent-page-detail {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .torrent-page-detail div {
+    margin: 10px 0;
+  }
+
+  .seed-and-leech div {
+    margin: 0 10px 0 0;
+  }
+
+  .leech {
+    margin-left: 10px !important;
+  }
+
+  .torrent-page-magnet a {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 700px) {
+  .torrent-page {
+    margin-top: 150px;
+  }
+}
+
+@media (max-width: 800px) {
+  .torrent-page {
+    margin-top: 150px;
+  }
+}
+
+.dropdown-menu-open {
+  top: 135px;
+}
+
+.torrent-page-detail {
+  margin-top: 20px;
+}

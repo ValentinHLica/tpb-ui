@@ -1,0 +1,152 @@
+/* Search Results */
+
+.search-page .loading {
+  padding-top: 50px;
+}
+
+.results-wrapper {
+  margin-top: 100px;
+}
+
+.results-header {
+  padding: 20px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 60% 10% 10% 10% 10%;
+}
+
+.torrent {
+  background-color: white;
+  border-radius: 3px;
+  margin: 10px 0;
+  padding: 20px;
+  box-shadow: 0px 1px 2px 2px #eee;
+}
+
+.torrent img {
+  width: 15px;
+  margin: 0 5px;
+}
+
+.torrent-title {
+  margin-bottom: 10px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  font-weight: 900;
+  font-size: 1.2em;
+  color: #505050;
+}
+
+.torrent-detail {
+  display: grid;
+  grid-template-columns: 30% 45% 25%;
+  /* display: flex;
+    justify-content: space-between; */
+}
+
+.box {
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+}
+
+.torrent-category {
+  display: flex;
+}
+
+.torrent-category div {
+  background: #eee;
+  box-shadow: 0px 1px 2px #eee;
+  padding: 0 5px;
+  border-radius: 6px;
+  margin-right: 5px;
+  font-size: 0.9em;
+}
+
+.vip {
+  color: #a4724c;
+}
+
+.vip img {
+  vertical-align: middle;
+}
+
+.magnet a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 5px;
+  border-radius: 5px;
+  background-color: #4bb49a;
+  box-shadow: 0px 1px 2px #4bb49a;
+  transition: background-color 0.2s;
+}
+
+.magnet a:hover {
+  background-color: #3fa088;
+}
+
+.mobile,
+.torrent-detail .magnet {
+  display: none;
+}
+
+@media (max-width: 992px) {
+  .torrent-detail {
+    display: flex;
+    /* flex-wrap: wrap; */
+    flex-direction: column;
+    /* align-items: center; */
+  }
+
+  .torrent-detail div {
+    margin: 5px;
+  }
+}
+
+.nothing-found {
+  text-align: center;
+  margin-top: 50px;
+}
+
+@media (max-width: 800px) {
+  .results-wrapper {
+    margin-top: 150px;
+  }
+}
+
+@media (max-width: 600px) {
+  .torrent-info {
+    width: 100%;
+  }
+
+  .results-header {
+    display: none;
+  }
+
+  .mobile {
+    display: block;
+    width: 100%;
+  }
+
+  .mobile-wrap {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .box {
+    display: none;
+  }
+
+  .torrent {
+    display: flex;
+  }
+
+  .torrent-detail .magnet {
+    display: block;
+  }
+}

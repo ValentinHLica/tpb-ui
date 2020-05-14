@@ -1,26 +1,42 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { HashRouter as Router, Switch, Route } from "react-router-dom";
 
-function App() {
+// Search Page
+import Search from "./components/Search/Main";
+
+// Provider
+import Provider from "./components/Context";
+
+// Torrent Results
+import Results from "./components/Results/Main";
+
+// Torrent Page
+import Torrent from "./components/Torrent/Main";
+
+// 404 Page
+import PageNotFound from "./components/other/PageNotFound";
+
+// User
+// import Login from "./components/User/Login";
+
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Provider>
+      <Router>
+        <Switch>
+          <Route exact path="/" component={Search} />
+          <Route
+            exact
+            path="/results/:searchQuery/:category/:sort"
+            component={Results}
+          />
+
+          {/* <Route exact path="/login" component={Login} /> */}
+          <Route exact path="/torrent/:torrentId" component={Torrent} />
+
+          <Route path="*" component={PageNotFound} />
+        </Switch>
+      </Router>
+    </Provider>
   );
 }
-
-export default App;
