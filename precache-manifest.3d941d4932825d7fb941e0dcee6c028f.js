@@ -1,27 +1,31 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "88d4a09d5f9f448c746051afb992f75b",
+    "revision": "078832a77db7a488eb1a16c58ab8eb57",
     "url": "/tpb-ui/index.html"
   },
   {
-    "revision": "a80f22040d9f1991d586",
-    "url": "/tpb-ui/static/css/main.93e6ad9b.chunk.css"
+    "revision": "0a420e776fa7a20484f7",
+    "url": "/tpb-ui/static/css/main.ed0d1aa8.chunk.css"
   },
   {
-    "revision": "d97c4d83bee2937646e6",
-    "url": "/tpb-ui/static/js/2.abe1ec20.chunk.js"
+    "revision": "b98d112540b1dd15e53c",
+    "url": "/tpb-ui/static/js/2.840004fe.chunk.js"
   },
   {
     "revision": "c64c486544348f10a6d6c716950bc223",
-    "url": "/tpb-ui/static/js/2.abe1ec20.chunk.js.LICENSE.txt"
+    "url": "/tpb-ui/static/js/2.840004fe.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "a80f22040d9f1991d586",
-    "url": "/tpb-ui/static/js/main.2854b464.chunk.js"
+    "revision": "0a420e776fa7a20484f7",
+    "url": "/tpb-ui/static/js/main.2ba99a9a.chunk.js"
   },
   {
     "revision": "2174ca9f7ad4553f4a26",
     "url": "/tpb-ui/static/js/runtime-main.13f49e95.js"
+  },
+  {
+    "revision": "dc372a07777e87891aaac087cfbe60ad",
+    "url": "/tpb-ui/static/media/arrow-right.dc372a07.svg"
   },
   {
     "revision": "abc59452d78316ace408d807fd41af67",
