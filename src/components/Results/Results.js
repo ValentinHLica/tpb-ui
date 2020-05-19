@@ -25,7 +25,11 @@ export default function Results(props) {
             </p>
             <div className="torrent-detail">
               <div className="torrent-category">
-                <div>{torrent.info.type}</div>
+                <div>
+                  {torrent.info.type === "Applications"
+                    ? "App"
+                    : torrent.info.type}
+                </div>
                 <div>{torrent.info.category}</div>
               </div>
               <div className="torrent-uploder">

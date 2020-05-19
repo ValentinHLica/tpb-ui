@@ -18,7 +18,13 @@ export default function Main(props) {
   const [err, setErr] = useState(false);
   const [emptyQuery, setemptyQuery] = useState(false);
 
-  const submit = async (query, category, searchTorrents, form) => {
+  const submit = async (
+    query,
+    category,
+    searchTorrents,
+    setPagination,
+    form
+  ) => {
     form.preventDefault();
 
     if (query.length === 0) {
@@ -48,6 +54,11 @@ export default function Main(props) {
       .then((data) => {
         searchTorrents(data.data.data);
 
+        setPagination([
+          data.data.pagination.currentPage,
+          data.data.pagination.lastPage,
+        ]);
+
         setLoading(false);
         props.history.push(
           `/results/${query}/${categoryTranslate.join(",")}/7`
@@ -73,7 +84,8 @@ export default function Main(props) {
                   this,
                   value.query,
                   value.category,
-                  value.searchTorrents
+                  value.searchTorrents,
+                  value.setPagination
                 )}
               >
                 <input
@@ -89,7 +101,7 @@ export default function Main(props) {
                   <p className="query-error">Please add a search query</p>
                 ) : null}
 
-                <button></button>
+                <button type="submit"></button>
               </form>
               <Category />
               <button
@@ -98,7 +110,8 @@ export default function Main(props) {
                   this,
                   value.query,
                   value.category,
-                  value.searchTorrents
+                  value.searchTorrents,
+                  value.setPagination
                 )}
               >
                 PIRATE SEARCH

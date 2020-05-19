@@ -4,6 +4,11 @@ const Context = React.createContext();
 export default class Provider extends Component {
   state = {
     data: [],
+    searchTorrents: (torrents) => {
+      this.setState({
+        data: torrents,
+      });
+    },
     query: "",
     setSearchQuery: (searchQuery) => {
       this.setState({ query: searchQuery });
@@ -50,10 +55,9 @@ export default class Provider extends Component {
         category: newCategory,
       });
     },
-    searchTorrents: (torrents) => {
-      this.setState({
-        data: torrents,
-      });
+    pagination: [1, 0],
+    setPagination: (pagination) => {
+      this.setState({ pagination });
     },
   };
 

@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import App from "./App";
-import "./css/main.css";
+import "./assets/css/main.css";
 
 window.api_url = "https://tpb-api.herokuapp.com/";
 

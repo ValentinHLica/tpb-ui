@@ -3,6 +3,8 @@ import axios from "axios";
 
 import { Context } from "../Context";
 
+import { Link } from "react-router-dom";
+
 import "./style.css";
 
 import Header from "./Header";
@@ -51,7 +53,14 @@ export default function Main(props) {
       <div className="torrent-page container">
         <Loading show={loading} />
 
-        {err ? <h1 className="nothing-found">Nothing was found</h1> : null}
+        {err ? (
+          <h1 className="nothing-found">
+            Nothing was found{" "}
+            <Link to="/" className="go-back">
+              Go Back
+            </Link>
+          </h1>
+        ) : null}
 
         {torrent.title ? (
           <React.Fragment>

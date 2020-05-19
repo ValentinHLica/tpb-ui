@@ -16,9 +16,6 @@ import Torrent from "./components/Torrent/Main";
 // 404 Page
 import PageNotFound from "./components/other/PageNotFound";
 
-// User
-// import Login from "./components/User/Login";
-
 export default function App() {
   return (
     <Provider>
@@ -30,10 +27,7 @@ export default function App() {
             path="/results/:searchQuery/:category/:sort"
             component={Results}
           />
-
-          {/* <Route exact path="/login" component={Login} /> */}
           <Route exact path="/torrent/:torrentId" component={Torrent} />
-
           <Route path="*" component={PageNotFound} />
         </Switch>
       </Router>
