@@ -1,5 +1,0 @@
-[]. Login Page
-[]. Register
-[]. Torrent Page
-[]. Bookmark torrent
-
