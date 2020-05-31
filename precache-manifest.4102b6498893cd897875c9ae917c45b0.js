@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "078832a77db7a488eb1a16c58ab8eb57",
+    "revision": "2ba72a81f33bbc1c724325888aa36c88",
     "url": "/tpb-ui/index.html"
   },
   {
-    "revision": "0a420e776fa7a20484f7",
-    "url": "/tpb-ui/static/css/main.ed0d1aa8.chunk.css"
+    "revision": "fcdec0dd4807d20c7974",
+    "url": "/tpb-ui/static/css/main.13f78a12.chunk.css"
   },
   {
-    "revision": "b98d112540b1dd15e53c",
-    "url": "/tpb-ui/static/js/2.840004fe.chunk.js"
+    "revision": "7e776b886abb8cbb0d85",
+    "url": "/tpb-ui/static/js/2.6272cda7.chunk.js"
   },
   {
     "revision": "c64c486544348f10a6d6c716950bc223",
-    "url": "/tpb-ui/static/js/2.840004fe.chunk.js.LICENSE.txt"
+    "url": "/tpb-ui/static/js/2.6272cda7.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "0a420e776fa7a20484f7",
-    "url": "/tpb-ui/static/js/main.2ba99a9a.chunk.js"
+    "revision": "fcdec0dd4807d20c7974",
+    "url": "/tpb-ui/static/js/main.96d6005a.chunk.js"
   },
   {
     "revision": "2174ca9f7ad4553f4a26",
@@ -42,10 +42,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "d4857d8daf2d8c2823bb48cae80908e7",
     "url": "/tpb-ui/static/media/loader.d4857d8d.svg"
-  },
-  {
-    "revision": "590f7a385f1727b8519c6a6f305d891c",
-    "url": "/tpb-ui/static/media/menu.590f7a38.svg"
   },
   {
     "revision": "a450ec36f430e2eab04ace41e135f72f",
