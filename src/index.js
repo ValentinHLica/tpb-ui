@@ -3,7 +3,7 @@ import ReactDOM from "react-dom";
 import App from "./App";
 import "./assets/css/main.css";
 
-window.api_url = "https://tpb-api.herokuapp.com/";
+window.api_url = "https://portfolio-server-vl.herokuapp.com/tpb/";
 
 ReactDOM.render(
   <React.StrictMode>
